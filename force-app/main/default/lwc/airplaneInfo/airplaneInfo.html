@@ -1,0 +1,25 @@
+<template>
+    <lightning-card>
+    <template if:true={recordId}>
+        <lightning-layout>
+            <!-- Use our flow variable -->
+            <lightning-layout-item  size="10" class="slds-var-p-around_x-small">
+                <lightning-card icon-name="custom:custom20">
+                    <lightning-record-view-form object-api-name="Airplane__c" record-id={recordId} mode="readonly">
+                        <lightning-output-field field-name="ICAO24__c"></lightning-output-field>
+                        <lightning-output-field field-name="Callsign__c"></lightning-output-field>
+                        <lightning-output-field field-name="Last_Contact__c"></lightning-output-field>
+                        <lightning-output-field field-name="Current_Location__Longitude__s"></lightning-output-field>
+                        <lightning-output-field field-name="Current_Location__Latitude__s"></lightning-output-field>
+                    </lightning-record-view-form>
+                </lightning-card>
+            
+                <lightning-button label="Follow" onclick={followTheAirplane}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </template>
+    <template if:false={recordId}>
+        <p>Select, please, airplane</p>
+    </template>
+</lightning-card>
+</template>

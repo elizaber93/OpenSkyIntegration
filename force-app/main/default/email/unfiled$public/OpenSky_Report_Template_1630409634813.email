@@ -1,0 +1,4 @@
+<html><head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">There's a file with information about airplane <h1>&nbsp;{{{Airplane__c.ICAO24__c}}}</h1> from&nbsp;{{{Airplane__c.Origin_Country__c}}}.</body></html>

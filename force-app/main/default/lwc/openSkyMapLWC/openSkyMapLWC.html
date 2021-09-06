@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title={timestamp} icon-name="action:map">
+      <template if:true={mapMarkers}>   
+        <lightning-map map-markers={mapMarkers} zoom-level="1" list-view="hidden" onmarkerselect={handleMarkerSelect} selected-marker-value={selectedMarkerValue}>></lightning-map>  
+      </template>
+    </lightning-card>
+    <button class="slds-button slds-button_neutral" label="Refresh" onclick={handleDataUpdate}>Refresh</button>
+  </template>

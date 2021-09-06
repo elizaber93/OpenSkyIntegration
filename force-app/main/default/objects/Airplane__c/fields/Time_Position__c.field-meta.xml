@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Position__c</fullName>
+    <description>Unix timestamp (seconds) for the last position update. Can be null if no position report was received by OpenSky within the past 15s.</description>
+    <externalId>false</externalId>
+    <label>Time Position</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
